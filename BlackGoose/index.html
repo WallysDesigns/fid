@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Black Goose Bistro</title>
+    <style>
+        body {
+            background-color: #f8f4f0;
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d4a373;
+            margin-top: 30px;
+            color: #d4a373;
+            width: 80%;
+        }
+
+        h2 {
+            color: #b5838d;
+            font-size: 1.2em;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 1px solid #b5838d;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            width: 80%;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #b5838d;
+            margin: 10px auto 0;
+        }
+
+        p {
+            line-height: 1.6;
+            width: 80%;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #d4a373;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #b5838d;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="bg_news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1><img src="blackgoose.png" alt="logo"><br>Black Goose Bistro</h1>
+        <h2>The Restaurant</h2>
+        <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
+
+        <h2>Catering</h2>
+        <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
+
+        <h2>Location and Hours</h2>
+        <p>Seekonk, Massachusetts;<br>
+            Monday through Thursday 11am to 9pm; <br>Friday and Saturday, 11am to midnight</p>
+    </div>
+</body>
+
+</html>
