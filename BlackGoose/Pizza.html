@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blackstone Bistro | Pizza-on-Demand</title>
+    <style>
+        body {
+            background-color: #f8f4f0;
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d4a373;
+            margin-top: 30px;
+            color: #5a3e36; /* Darker brown color */
+            width: 80%;
+        }
+
+        h2 {
+            color: #b5838d;
+            font-size: 1.2em;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 1px solid #b5838d;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            width: 80%;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #b5838d;
+            margin: 10px auto 0;
+        }
+
+        p {
+            line-height: 1.6;
+            width: 80%;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #d4a373;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #b5838d;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        form {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #d4a373;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #b5838d;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="bg_news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+        <form>
+            <h2>Your Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Telephone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="instructions">Delivery instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+            <h2>Design Your Dream Pizza</h2>
+            <label for="crust">Crust (Choose one):</label>
+            <select id="crust" name="crust" required>
+                <option value="classic">Classic white</option>
+                <option value="multigrain">Multigrain</option>
+                <option value="cheese-stuffed">Cheese-stuffed crust</option>
+                <option value="gluten-free">Gluten-free</option>
+            </select>
+
+            <label>Toppings (Choose as many as you want):</label>
+            <label><input type="checkbox" name="toppings" value="red-sauce"> Red sauce</label>
+            <label><input type="checkbox" name="toppings" value="white-sauce"> White sauce</label>
+            <label><input type="checkbox" name="toppings" value="mozzarella"> Mozzarella Cheese</label>
+            <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+            <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+            <label><input type="checkbox" name="toppings" value="peppers"> Peppers</label>
+            <label><input type="checkbox" name="toppings" value="anchovies"> Anchovies</label>
+
+            <label for="quantity">How many pizzas:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </div>
+</body>
+
+</html>
