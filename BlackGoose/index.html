@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -22,7 +22,7 @@
             text-transform: uppercase;
             border-bottom: 2px solid #d4a373;
             margin-top: 30px;
-            color: #d4a373;
+            color: #5a3e36; /* Darker brown color */
             width: 80%;
         }
 
@@ -90,6 +90,40 @@
             align-items: center;
             width: 100%;
         }
+
+        .button-container {
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            background-color: #d4a373;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .button-container a:hover {
+            background-color: #b5838d;
+        }
+
+        footer {
+            background-color: #d4a373;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -102,6 +136,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="pizza.html">Pizza-on-Demand</a></li>
         </ul>
     </nav>
     <div class="content">
@@ -115,7 +150,14 @@
         <h2>Location and Hours</h2>
         <p>Seekonk, Massachusetts;<br>
             Monday through Thursday 11am to 9pm; <br>Friday and Saturday, 11am to midnight</p>
+
+        <div class="button-container">
+            <a href="pizza.html">Order Pizza-on-Demand</a>
+        </div>
     </div>
+    <footer>
+        <p>&copy; 2025 Black Goose Bistro. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
