@@ -36,11 +36,11 @@
         }
 
         .gallery img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover; /* Ensures the image fills the square without distortion */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px; /* Ensures the width is within the required range */
+            height: 150px; /* Ensures the thumbnails are square */
+            object-fit: cover; /* Crops the image to fit the square without distortion */
+            border-radius: 10px; /* Adds rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a modern look */
         }
 
         .gallery-title {
