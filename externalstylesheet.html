@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Stylesheet</title>
+    <style>
+        body {
+            background: #f4e3d7 url('backgroundforwebsite.png') no-repeat center/cover; /* Light cream background with full-page image */
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #5a4633; /* Softer cream-brown text color */
+        }
+
+        /* Header container with tiling background */
+        .header-container {
+            background: url('tilingbackground.png') repeat-x top center; /* Tiling background at the top */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #6b4f3a; /* Creamy brown for headings */
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .info-box {
+            background: rgba(250, 240, 230, 0.95); /* Creamy light brown with transparency */
+            border: 2px solid #c8a27e; /* Softer cream-brown border */
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            font-size: 1em;
+            color: #5a4633;
+        }
+
+        /* Tabs for navigation */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0;
+            background: rgba(250, 240, 230, 0.9); /* Light brown with slight transparency */
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            background: #d4b89f; /* Softer cream-brown for tabs */
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background: #bfa48c; /* Slightly darker cream-brown for hover effect */
+        }
+
+        .tab.active {
+            background: #a88a73; /* Creamy brown for active tab */
+        }
+
+        .menu-section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            border: 5px solid #c8a27e; /* Softer cream-brown border */
+            border-radius: 15px; /* Rounded corners */
+            background: rgba(250, 240, 230, 0.9); /* Light brown with slight transparency */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Fancy shadow effect */
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.2em;
+            color: #6b4f3a; /* Creamy brown for item titles */
+            margin: 0;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #5a4633; /* Softer cream-brown for prices */
+            font-style: italic; /* Italicized prices */
+        }
+
+        .new-item {
+            color: #d9534f; /* Red for new items */
+            font-weight: bold;
+        }
+
+        .disclaimer {
+            font-size: 0.9em;
+            color: #7a6a5a; /* Muted cream-brown for disclaimers */
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>External Stylesheet Example</h1>
+    </div>
+
+    <div class="info-box">
+        <p>This is an example of an external stylesheet applied to a webpage.</p>
+    </div>
+
+    <div class="tabs">
+        <div class="tab">Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+    </div>
+
+    <div class="menu-section">
+        <div class="menu-item">
+            <h3>Menu Item 1</h3>
+            <p>Description of the menu item. <span class="price">$10.00</span></p>
+        </div>
+        <div class="menu-item">
+            <h3>Menu Item 2 <span class="new-item">New!</span></h3>
+            <p>Description of the menu item. <span class="price">$12.00</span></p>
+        </div>
+        <div class="menu-item">
+            <h3>Menu Item 3</h3>
+            <p>Description of the menu item. <span class="price">$8.00</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
