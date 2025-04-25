@@ -3,108 +3,101 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Goose Bistro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #f8f4f0;
+        /* General Styles */
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: 'Helvetica Neue', sans-serif;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f8f4f0;
             color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-weight: normal;
-            text-transform: uppercase;
-            border-bottom: 2px solid #d4a373;
-            margin-top: 30px;
-            color: #5a3e36; /* Darker brown color */
-            width: 80%;
-        }
-
-        h2 {
-            color: #b5838d;
-            font-size: 1.2em;
-            font-family: 'Playfair Display', serif;
-            border-bottom: 1px solid #b5838d;
-            padding-bottom: 5px;
-            margin-top: 20px;
-            font-weight: bold;
-            width: 80%;
-            text-align: center;
-            position: relative;
-        }
-
-        h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background-color: #b5838d;
-            margin: 10px auto 0;
-        }
-
-        p {
             line-height: 1.6;
-            width: 80%;
+        }
+
+        header {
+            background-color: #d4a373;
+            padding: 2rem 1rem;
             text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         nav {
-            background-color: #d4a373;
-            padding: 10px 0;
-            width: 100%;
+            background-color: #b5838d;
+            padding: 1rem 0;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
             margin: 0;
         }
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
+        nav a {
             text-decoration: none;
             color: #fff;
             font-weight: bold;
-            padding: 5px 10px;
+            padding: 0.5rem 1rem;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
-        nav ul li a:hover {
-            background-color: #b5838d;
+        nav a:hover {
+            background-color: #d4a373;
         }
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
+        main {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            color: #5a3e36;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #d4a373;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
         }
 
         .button-container {
-            margin: 20px 0;
+            margin: 2rem 0;
         }
 
         .button-container a {
             background-color: #d4a373;
             color: #fff;
-            padding: 15px 30px;
+            padding: 1rem 2rem;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 5px;
             font-weight: bold;
-            font-size: 1.2em;
-            display: inline-block;
-            text-align: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
         }
 
         .button-container a:hover {
@@ -112,50 +105,56 @@
         }
 
         footer {
-            background-color: #d4a373;
-            padding: 10px 0;
-            width: 100%;
+            background-color: #b5838d;
+            color: #fff;
             text-align: center;
-            margin-top: 20px;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
 
         footer p {
             margin: 0;
-            color: #fff;
-            font-weight: bold;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <h1>Black Goose Bistro</h1>
+        <p>Casual Dining & Catering in Seekonk, Massachusetts</p>
+    </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu6.html">Menu</a></li>
             <li><a href="bg_news.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="Pizza.html">Pizza-on-Demand</a></li>
-            <li><a href="CookingwithDaniel.html">Cooking with Daniel</a></li> <!-- New tab added -->
+            <li><a href="pizza.html">Pizza-on-Demand</a></li>
+            <li><a href="CookingwithDaniel.html">Cooking with Daniel</a></li>
         </ul>
     </nav>
-    <div class="content">
-        <h1><img src="blackgoose.png" alt="logo"><br>Black Goose Bistro</h1>
-        <h2>The Restaurant</h2>
-        <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
 
-        <h2>Catering</h2>
+    <main>
+        <h2>Welcome to Black Goose Bistro</h2>
+        <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. Our menu changes regularly to highlight the freshest local ingredients.</p>
+
+        <h2>Catering Services</h2>
         <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
 
         <h2>Location and Hours</h2>
-        <p>Seekonk, Massachusetts;<br>
-            Monday through Thursday 11am to 9pm; <br>Friday and Saturday, 11am to midnight</p>
+        <p>Seekonk, Massachusetts<br>
+            Monday through Thursday: 11am to 9pm<br>
+            Friday and Saturday: 11am to midnight</p>
 
         <div class="button-container">
-            <a href="Pizza.html">Order Pizza-on-Demand</a>
+            <a href="pizza.html">Order Pizza-on-Demand</a>
         </div>
-    </div>
+    </main>
+
     <footer>
         <p>&copy; 2025 Black Goose Bistro. All rights reserved.</p>
     </footer>
