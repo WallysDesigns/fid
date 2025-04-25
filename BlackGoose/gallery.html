@@ -1,54 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Goose Bistro Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #faf2e4;
-            margin: 0 10%;
-            font-family: sans-serif;
+            background-color: #ffffff; /* Clean white background */
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
         }
 
-        h1, h2 {
+        h1 {
             text-align: center;
-            font-family: serif;
-            font-weight: normal;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
             text-transform: uppercase;
-            border-bottom: 1px solid #57b1dc;
+            border-bottom: 2px solid #d4a373;
             margin-top: 30px;
+            color: #5a3e36;
+            font-size: 2rem;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #5a3e36;
+            max-width: 800px;
+            margin: 20px auto 40px;
+            padding: 10px 20px;
+            border: 1px solid rgba(181, 131, 141, 0.5); /* Subtle mauve border */
+            border-radius: 10px;
+            background-color: #f8f4f0; /* Light background for emphasis */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #d1633c;
-            font-size: 1em;
+            color: #5a3e36;
+            font-size: 1.3rem;
+            font-family: 'Playfair Display', serif;
+            margin-top: 20px;
+            font-weight: 600;
         }
 
         .gallery-section {
             margin-bottom: 2em;
-            padding: 10px;
-            border: 1px solid rgba(212, 163, 115, 0.5);
+            padding: 15px;
+            border: 1px solid rgba(181, 131, 141, 0.5); /* Subtle mauve border */
             border-radius: 10px;
-            background-color: rgba(212, 163, 115, 0.1);
+            background-color: #ffffff; /* White background for sections */
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .gallery-section img {
-            width: 400px;
-            height: 600px;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
             display: block;
-            margin: 0 auto 10px;
+            margin: 0 auto 15px;
+            border-radius: 10px;
         }
 
         .gallery-section p {
             text-align: justify;
-            background-color: rgba(212, 163, 115, 0.5);
+            background-color: #b5838d; /* Mauve background for text */
+            color: #fff; /* White text for contrast */
             padding: 10px;
             border-radius: 10px;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
         nav {
-            background-color: #d4a373;
+            background-color: #b5838d;
             padding: 10px 0;
         }
 
@@ -57,41 +87,65 @@
             padding: 0;
             text-align: center;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #fff;
-            font-weight: bold;
+            font-weight: 500;
             padding: 5px 10px;
             border-radius: 5px;
+            transition: background-color 0.3s;
+            font-family: 'Roboto', sans-serif;
         }
 
         nav ul li a:hover {
+            background-color: #d4a373;
+        }
+
+        footer {
             background-color: #b5838d;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>Black Goose Bistro Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu6.html">Menu</a></li>
+                <li><a href="bg_news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pizza.html">Pizza-on-Demand</a></li>
+                <li><a href="CookingwithDaniel.html">Cooking with Daniel</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Black Goose Bistro Gallery</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="bg_news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <h2>Not only is our food good, it's also good-looking! Our patrons often stop to admire our fare with a quick Instagram before digging in. We've collected a few of our favorite shots here.</h2>
+    <div class="intro-text">
+        Welcome to the Black Goose Bistro Gallery! Here, we showcase the beauty of our carefully crafted dishes. From freshly baked goods to mouthwatering entrees, every dish is a work of art. Take a look at some of our favorites and see why our food is as visually stunning as it is delicious.
+    </div>
 
     <div class="gallery-section">
         <h2>Our Baked Goods</h2>
@@ -125,13 +179,13 @@
 
     <div class="gallery-section">
         <h2>Tabouleh</h2>
-        <img src="TABOULEH.svg" alt="close-up of tabouleh">
+        <img src="tabouleh.svg" alt="close-up of tabouleh">
         <p>Organic blend of locally-grown greens and quinoa, making the perfect way to indulge without guilt.</p>
     </div>
 
-    <div class="gallery-section">
-        <p><a href="index.html">Return</a></p>
-    </div>
-
+    <footer>
+        <p>&copy; 2025 Black Goose Bistro. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

@@ -1,97 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Jen's Kitchen</title>
-    <style>
-        body {
-            background-color: #f8f4f0;
-            margin: 0 10%;
-            font-family: 'Helvetica Neue', sans-serif;
-            color: #333;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jen's Kitchen</title>
+  <style>
+    body {
+      background-color: #f8f4f0;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        h1 {
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-weight: normal;
-            text-transform: uppercase;
-            border-bottom: 2px solid #d4a373;
-            margin-top: 30px;
-            color: #5a3e36; /* Darker brown color */
-        }
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      color: #5a3e36;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-        h2 {
-            color: #b5838d;
-            font-size: 1.2em;
-            font-family: 'Playfair Display', serif;
-            border-bottom: 1px solid #b5838d;
-            padding-bottom: 5px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
+    h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      color: #b5838d;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      position: relative;
+    }
 
-        p {
-            line-height: 1.6;
-            text-align: center;
-        }
+    h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: #b5838d;
+      margin: 10px auto 0;
+    }
 
-        nav {
-            background-color: #d4a373;
-            padding: 10px 0;
-        }
+    p {
+      text-align: center;
+      margin: 10px auto;
+      font-size: 1em;
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            margin: 0;
-        }
+    nav {
+      background-color: #b5838d; /* Matches the design of other pages */
+      padding: 10px 0;
+      width: 100%;
+    }
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+    nav ul li {
+      display: inline;
+    }
 
-        nav ul li a:hover {
-            background-color: #b5838d;
-        }
-    </style>
+    nav ul li a {
+      text-decoration: none;
+      color: #fff; /* White text for the tabs */
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #d4a373; /* Matches hover effect in other pages */
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    ul {
+      text-align: center;
+      padding: 0;
+    }
+
+    ul li {
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    ul li a {
+      color: #b5838d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #b5838d;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="bg_news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-    <h1><img src="jenskitchen.gif" alt="Jen's Kitchen banner" width="660" height="94"><br>Welcome to Jen&rsquo;s Cookbook</h1>
-    <p>People who know me know that I love to cook. I've created this site to share some of my favorite recipes and online food resources. <i>Bon Appetit!</i></p>
-    <p>About the site</p>
-    <h2>From Jen&rsquo;s Cookbook</h2>
+  <nav>
     <ul>
-        <li><a href="tapenade.html">Tapenade (Olive Spread)</a></li>
-        <li><a href="salmon.html">Garlic Salmon</a></li>
-        <li><a href="Linguinewithclam.html">Linguine with Clam Sauce</a></li>
-        <li><a href="CouscouswithPeasandMint.html">Couscous with Peas and Mint</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu6.html">Menu</a></li>
+      <li><a href="bg_news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="pizza.html">Pizza-on-Demand</a></li>
+      <li><a href="CookingwithDaniel.html">Cooking with Daniel</a></li>
     </ul>
-    <h2>Good Food on the Web</h2>
-    <ul>
-        <li><a href="http://www.foodnetwork.com">The Food Network</a></li>
-        <li><a href="http://www.epicurious.com">Epicurious</a></li>
-    </ul>
-    <p><small>Copyright 2016, Jennifer Robbins</small></p>
+  </nav>
+
+  <h1>
+    <img src="Jenskitchen.gif" alt="Jen's Kitchen banner">
+    <br>Welcome to Jen&rsquo;s Cookbook
+  </h1>
+  <p>People who know me know that I love to cook. I've created this site to share some of my favorite recipes and online food resources. <i>Bon Appetit!</i></p>
+  <p>About the site</p>
+
+  <h2>From Jen&rsquo;s Cookbook</h2>
+  <ul>
+    <li><a href="tapenade.html">Tapenade (Olive Spread)</a></li>
+    <li><a href="salmon.html">Garlic Salmon</a></li>
+    <li><a href="Linguinewithclam.html">Linguine with Clam Sauce</a></li>
+    <li><a href="CouscouswithPeasandMint.html">Couscous with Peas and Mint</a></li>
+  </ul>
+
+  <h2>Good Food on the Web</h2>
+  <ul>
+    <li><a href="http://www.foodnetwork.com" target="_blank">The Food Network</a></li>
+    <li><a href="http://www.epicurious.com" target="_blank">Epicurious</a></li>
+  </ul>
+
+  <footer>
+    <p>&copy; 2016, Jennifer Robbins</p>
+  </footer>
 </body>
+
 </html>

@@ -7,9 +7,9 @@
     <title>Cooking with Daniel - Nada Surf</title>
     <style>
         body {
-            background-color: #f8f4f0;
+            background-color: #ffffff; /* Clean white background */
             margin: 0;
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -19,22 +19,23 @@
         h1 {
             text-align: center;
             font-family: 'Playfair Display', serif;
-            font-weight: normal;
+            font-weight: 600;
             text-transform: uppercase;
             border-bottom: 2px solid #d4a373;
             margin-top: 30px;
-            color: #5a3e36; /* Darker brown color */
+            color: #5a3e36;
             width: 80%;
+            font-size: 2rem;
         }
 
         h2 {
             color: #b5838d;
-            font-size: 1.2em;
+            font-size: 1.5rem;
             font-family: 'Playfair Display', serif;
             border-bottom: 1px solid #b5838d;
             padding-bottom: 5px;
             margin-top: 20px;
-            font-weight: bold;
+            font-weight: 600;
             width: 80%;
             text-align: center;
             position: relative;
@@ -50,13 +51,14 @@
         }
 
         p {
-            line-height: 1.6;
+            line-height: 1.8;
             width: 80%;
-            text-align: center;
+            text-align: justify;
+            font-size: 1rem;
         }
 
         nav {
-            background-color: #d4a373;
+            background-color: #b5838d;
             padding: 10px 0;
             width: 100%;
         }
@@ -66,23 +68,27 @@
             padding: 0;
             text-align: center;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #fff;
-            font-weight: bold;
+            font-weight: 500;
             padding: 5px 10px;
             border-radius: 5px;
+            transition: background-color 0.3s;
+            font-family: 'Roboto', sans-serif;
         }
 
         nav ul li a:hover {
-            background-color: #b5838d;
+            background-color: #d4a373;
         }
 
         .content {
@@ -105,7 +111,7 @@
         }
 
         footer {
-            background-color: #d4a373;
+            background-color: #b5838d;
             padding: 10px 0;
             width: 100%;
             text-align: center;
@@ -115,7 +121,7 @@
         footer p {
             margin: 0;
             color: #fff;
-            font-weight: bold;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -124,6 +130,13 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="menu6.html">Menu</a></li>
+            <li><a href="bg_news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="pizza.html">Pizza-on-Demand</a></li>
+            <li><a href="CookingwithDaniel.html">Cooking with Daniel</a></li>
         </ul>
     </nav>
     <div class="content">

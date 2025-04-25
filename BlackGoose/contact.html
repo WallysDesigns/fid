@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Black Goose Bistro</title>
     <style>
         body {
             background-color: #f8f4f0;
-            margin: 0 10%;
+            margin: 0;
             font-family: 'Helvetica Neue', sans-serif;
             color: #333;
         }
@@ -37,7 +39,7 @@
         }
 
         nav {
-            background-color: #d4a373;
+            background-color: #b5838d; /* Matches the design of other pages */
             padding: 10px 0;
         }
 
@@ -46,23 +48,26 @@
             padding: 0;
             text-align: center;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #fff; /* White text for the tabs */
             font-weight: bold;
             padding: 5px 10px;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         nav ul li a:hover {
-            background-color: #b5838d;
+            background-color: #d4a373; /* Matches hover effect in other pages */
         }
 
         .contact-section {
@@ -77,21 +82,38 @@
         .contact-section a:hover {
             text-decoration: underline;
         }
+
+        footer {
+            background-color: #b5838d;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
-<body>
 
-    <h1>Contact Us</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="bg_news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu6.html">Menu</a></li>
+                <li><a href="bg_news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="JensKitchen.html">Jen's Kitchen</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pizza.html">Pizza-on-Demand</a></li>
+                <li><a href="CookingwithDaniel.html">Cooking with Daniel</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="contact-section">
         <h2>Contact Us</h2>
@@ -106,9 +128,9 @@
         <p>Friday and Saturday: 11am to midnight</p>
     </div>
 
-    <div class="contact-section">
-        <p><a href="index.html">Back to Home Page</a></p>
-    </div>
-
+    <footer>
+        <p>&copy; 2025 Black Goose Bistro. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
