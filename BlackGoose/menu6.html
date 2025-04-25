@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Goose Bistro - Summer Menu</title>
+    <style>
+        /* General body styling */
+        body {
+            background-color: #f8f4f0;
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Styling for the main title */
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #5a3e36;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Styling for section titles */
+        h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: #b5838d;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #b5838d;
+            margin: 10px auto 0;
+        }
+
+        /* Styling for menu sections */
+        .menu-section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            border: 2px solid #d4a373;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for menu item titles */
+        .menu-item h3 {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #b5838d;
+            margin: 0;
+        }
+
+        /* Styling for menu item descriptions */
+        .menu-item p {
+            margin: 5px 0;
+            line-height: 1.6;
+            font-size: 1em;
+        }
+
+        /* Styling for prices */
+        .menu-item .price {
+            font-weight: bold;
+            color: #5a3e36;
+            font-size: 1.1em;
+        }
+
+        /* Styling for new items */
+        .menu-item .new-item {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* Styling for disclaimers */
+        .menu-item .disclaimer {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Styling for italic text */
+        .italic {
+            font-style: italic;
+        }
+
+        /* Styling for bold text */
+        .bold {
+            font-weight: bold;
+        }
+
+        /* Styling for the hours paragraph */
+        .hours {
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        /* Fancy hover effect for menu items */
+        .menu-item {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu-item:hover {
+            background-color: #f8f4f0;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Black Goose Bistro • Summer Menu</h1>
+    <p class="hours">Baker's Corner, Seekonk, Massachusetts<br>Hours: <span class="bold">Monday through Thursday: 11 to 9</span>, <span class="bold">Friday and Saturday: 11 to midnight</span></p>
+
+    <div class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-item">
+            <h3>Black bean purses</h3>
+            <p><span class="italic">Spicy black bean</span> and a blend of Mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="price">$3.95</span></p>
+        </div>
+        <div class="menu-item">
+            <h3>Southwestern napoleons with lump crab <span class="new-item">— new item!</span></h3>
+            <p>Layers of <span class="italic">light lump crab meat</span>, bean and corn salsa, and our handmade flour tortillas. <span class="price">$7.95</span></p>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">
+            <h3>Jerk rotisserie chicken with fried plantains <span class="new-item">— new item!</span></h3>
+            <p>Tender chicken slow-roasted on the rotisserie, flavored with <span class="italic bold">spicy and fragrant jerk sauce</span> and served with fried plantains and fresh mango. Very spicy. <span class="price">$12.95</span></p>
+        </div>
+        <div class="menu-item">
+            <h3>Shrimp sate kebabs with peanut sauce</h3>
+            <p>Skewers of shrimp marinated in <span class="italic">lemongrass, garlic, and fish sauce</span> then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="price">$12.95</span></p>
+        </div>
+        <div class="menu-item">
+            <h3>Grilled skirt steak with mushroom fricasee</h3>
+            <p>Flavorful skirt steak marinated in <span class="italic">Asian flavors</span> grilled as you like it*. Served over a blend of sautéed wild mushrooms with a side of <span class="bold">blue cheese mashed potatoes</span>. <span class="price">$16.95</span></p>
+            <p class="disclaimer">* We are required to warn you that undercooked food is a health risk.</p>
+        </div>
+    </div>
+</body>
+
+</html>
